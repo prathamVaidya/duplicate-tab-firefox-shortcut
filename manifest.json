@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Duplicate Tab Shortcut",
+  "version": "1.0",
+  "description": "Duplicate the currently active tab using keyboard shortcuts (Command+Shift+D on Mac, Ctrl+Shift+D on Windows/Linux)",
+  "author": "Your Name",
+  "homepage_url": "https://github.com/yourusername/duplicate-firefox-tab",
+  
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  
+  "commands": {
+    "duplicate-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+D",
+        "mac": "Command+Shift+D"
+      },
+      "description": "Duplicate the currently active tab"
+    }
+  },
+  
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  }
+} 

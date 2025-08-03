@@ -1,0 +1,28 @@
+{
+  "name": "duplicate-firefox-tab",
+  "version": "1.0.0",
+  "description": "A Firefox browser extension that duplicates the currently active tab using keyboard shortcuts",
+  "main": "manifest.json",
+  "scripts": {
+    "build": "echo 'No build step required for Firefox extensions'",
+    "test": "echo 'Test by loading the extension in Firefox'"
+  },
+  "keywords": [
+    "firefox",
+    "extension",
+    "browser",
+    "tab",
+    "duplicate",
+    "keyboard-shortcut"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/duplicate-firefox-tab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/duplicate-firefox-tab/issues"
+  },
+  "homepage": "https://github.com/yourusername/duplicate-firefox-tab#readme"
+} 
