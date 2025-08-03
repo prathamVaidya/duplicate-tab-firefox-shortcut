@@ -4,7 +4,7 @@ document.addEventListener('keydown', (event) => {
   const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
   const modifierKey = isMac ? event.metaKey : event.ctrlKey;
   
-  if (modifierKey && event.shiftKey && event.key === 'D') {
+  if (modifierKey && event.shiftKey && (event.key === 'd' || event.key === 'D')) {
     // Prevent default behavior
     event.preventDefault();
     event.stopPropagation();
